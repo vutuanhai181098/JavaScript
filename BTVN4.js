@@ -8,15 +8,15 @@ let colors = [
 
 // Cập nhật số lượng total box trong thẻ <span> có class “points”
 const totalBox = () => {
-    const span = document.querySelector('.points');
-    const boxes = document.querySelectorAll('.box');
+    let span = document.querySelector('.points');
+    let boxes = document.querySelectorAll('.box');
     span.textContent = boxes.length;
 }
 
 // Render số box = số lượng màu ra ngoài màn hình bằng javascript (5 box)
 // Box được tạo bởi thẻ div, có class=“box”, background tương ứng với từng mã màu
 const render = (arr, n) => {
-    const boxes = document.querySelector('.boxes');
+    let boxes = document.querySelector('.boxes');
     for(let i = 0; i < n; i++){
         let box = document.createElement('div');
         box.classList.add('box');
